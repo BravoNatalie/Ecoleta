@@ -30,6 +30,9 @@ const Home = () => {
     axios.get<IBGEUFResponse[]>('https://servicodados.ibge.gov.br/api/v1/localidades/estados').then(response => {
       const ufInitials = response.data.map(uf => uf.sigla);
       setUfs(ufInitials);
+    })
+    .catch(error => {
+      console.log(error.response.data);
     });
   }, []);
 
@@ -40,6 +43,9 @@ const Home = () => {
       .then(response => {
         const cityNames = response.data.map(city => city.nome);
         setCities(cityNames);
+      })
+      .catch(error => {
+        console.log(error.response.data);
       });
   }, [selectedUF]);
 
