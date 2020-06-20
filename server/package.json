@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "13.12.0"
+  },
   "scripts": {
     "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
     "start": "ts-node src/server.ts",
