@@ -6,6 +6,7 @@ import { LeafletMouseEvent } from 'leaflet';
 import axios from 'axios';
 
 import DropZone from '../../components/DropZone';
+import SuccessModal from '../../components/SuccessModal';
 
 import api from '../../services/api';
 import './styles.css';
@@ -44,6 +45,7 @@ const CreatePoint = () => {
   const [selectedCity, setSelectedCity] = useState('0');
   const [selectedPosition, setSelectedPosition] = useState<[number, number]>([0, 0]);
   const [selectedFile, setSelectedFile] = useState<File>();
+  const [submitButton, setSubmitButton] = useState(false);
 
   const history = useHistory();
 
@@ -129,8 +131,12 @@ const CreatePoint = () => {
       data.append('image', selectedFile);
     }
 
-    await api.post('points', data);
-    alert("Cadastro concluído!");
+    // await api.post('points', data);
+    setSubmitButton(true);
+  }
+
+  function handleHideModal(){
+    setSubmitButton(false);
     history.push('/');
   }
 
@@ -248,7 +254,7 @@ const CreatePoint = () => {
           </ul>
         </fieldset>
         <button type="submit">Cadastrar ponto de coleta</button>
-
+        <SuccessModal onClickHide={handleHideModal} show={submitButton}/>
       </form>
 
     </div>
