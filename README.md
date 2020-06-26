@@ -38,10 +38,10 @@ The project was developed during **Next Level Week**, an event provided by [Rock
 
 Check it out how it looks like:
 
-<div align="center">
+<p align="center">
   <img alt="Web App" width="680" height="400"  src="https://res.cloudinary.com/nataliebravo/image/upload/v1593174151/Ecoleta_github_assets/InShot-20200624-155437898_jfgc3t.gif" >
   <img alt="Mobile App" width="200" height="440" src="https://res.cloudinary.com/nataliebravo/image/upload/v1593173335/Ecoleta_github_assets/InShot-mobile_kcybx9.gif" >
-<div/>
+<p />
 
 <a id='technologies'/>
 
