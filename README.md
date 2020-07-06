@@ -27,7 +27,7 @@
 
 ## :information_source: About
 
-The :recycle:**Ecoleta** is a Web and Mobile application that aims to connect people to companies that collect specific waste such as light bulbs, batteries, etc.
+The :recycle:**Ecoleta** is a Web and Mobile application that aims to connect people with companies that collect specific waste such as light bulbs, batteries, etc.
 
 The project was developed during **Next Level Week**, an event provided by [Rocketseat](https://rocketseat.com.br/) to teach new technologies, tools and hacks to leverage participants' developer careers.
 
@@ -36,7 +36,7 @@ The project was developed during **Next Level Week**, an event provided by [Rock
 
 ## :framed_picture: Preview
 
-Check it out how it looks like:
+Check out how it looks:
 
 <p align="center">
   <img alt="Web App"   src="https://res.cloudinary.com/nataliebravo/image/upload/v1593174151/Ecoleta_github_assets/InShot-20200624-155437898_jfgc3t.gif" >
@@ -109,7 +109,7 @@ To run the application you'll need:
 ### Backend
 
 In order o run the server on your machine, you'll need to change the ip address configuration.<br/> 
-Create a **.env** file on the root of the [server/](https://github.com/BravoNatalie/Ecoleta/tree/master/server) folder and set a enviromental variable like that:
+Create a **.env** file on the root of the [server/](https://github.com/BravoNatalie/Ecoleta/tree/master/server) folder and set an enviromental variable as the following:
 
 ```dotenv
 APP_URL = http://192.168.1.31:3333
@@ -134,7 +134,8 @@ $ yarn start
 ### Frontend
 
 In order o run the web app on your machine, you'll need to change the ip address configuration.<br/> 
-Create a **.env** file on the root of the [web/](https://github.com/BravoNatalie/Ecoleta/tree/master/web) folder and set a enviromental variable like that:
+Create a **.env** file on the root of the [web/](https://github.com/BravoNatalie/Ecoleta/tree/master/web) folder and set a enviromental variable as the following:
+
 
 ```dotenv
 REACT_APP_API_URL = http://localhost:3333
@@ -160,7 +161,7 @@ In order to run the application on your device, you'll need to change the ip add
 ```javascript
   baseURL: 'http://192.168.1.31:3333',
 ```
-Now with everything on place, run the application.
+Now with everything in place, run the application.
 
 ```bash
 $ cd mobile
